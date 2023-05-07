@@ -1,0 +1,8 @@
+.active {
+    background-color: rgb(185, 6, 239);
+    color: #7fff00;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+.header-content {
+    background-color: #ebdede;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content a {
+    margin: 0;
+    color: rgb(46, 214, 133);
+    text-decoration: none;
+}
+
+.logo-container {
+    color: rgb(19, 194, 113);
+}
