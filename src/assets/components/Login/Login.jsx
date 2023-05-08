@@ -25,6 +25,8 @@ const Login = () => {
                 .then((result) => {
                     console.log(result.user);
                     navigate("/");
+                    setEmail("");
+                    setPassword("");
                 })
                 .catch((error) => {
                     console.log(error.message);

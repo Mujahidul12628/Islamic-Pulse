@@ -22,7 +22,7 @@ const Menubar = () => {
     };
     return (
         <div className="header-content">
-            <div className="logo">Savory Bites</div>
+            <div className="logo-container">Savory Bites</div>
             <div id="menu-container">
                 <Link to="/">
                     <div>Home</div>
@@ -53,9 +53,8 @@ const Menubar = () => {
                         )}
                     </div>
 
-                    {/* <div id="userEmail" title={user?.displayName
-                    }>{user?.email}</div> */}
-                    <img id="image-url" title={user?.email} src={user?.photoURL} alt="img" />
+                    {/* <img id="image-url" title={user?.email} src={user?.email} alt="" /> */}
+                    <img src={user?.email} alt="" />
 
                 </div>
 
