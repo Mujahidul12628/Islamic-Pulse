@@ -38,6 +38,27 @@ const Chefs = () => {
                     <img src={banner} alt="banner" />
                 </div>
             </div>
+            <div>
+                <h1 id='ho'>Recent Top Rated  Food</h1>
+                <div id='best-section'>
+
+                    <div className='chef-card'>
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/200401171803-07-best-turkish-foods-inegol-kofte.jpg?q=x_0,y_0,h_1688,w_2999,c_fill/h_720,w_1280/f_webp" alt="" />
+                        <h4>Inegol kofte</h4>
+                        <p>Grilled meatballs made using ground beef or lamb, breadcrumbs and onions.</p>
+                    </div>
+                    <div className='chef-card'>
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/200401171826-08-best-turkish-foods-iskender-kebab.jpg?q=x_0,y_0,h_1688,w_2999,c_fill/h_720,w_1280/f_webp" alt="" />
+                        <h4>Iskender kebab</h4>
+                        <p>Iskender kebab is named after İskender Efendi, the man who invented the dish.</p>
+                    </div>
+                    <div className='chef-card'>
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/200401171851-09-best-turkish-foods-cag-kebab.jpg?q=x_0,y_0,h_1688,w_2999,c_fill/h_720,w_1280/f_webp" alt="" />
+                        <h4>Cag kebab</h4>
+                        <p>Marinated lamb roasted on a horizontal rotating spit and cooked over a wood fire.</p>
+                    </div>
+                </div>
+            </div>
             <h1>Our Chefs</h1>
             <div className="chefs">
                 {/* {chefData[0]?.chefs?.map((chef) => ( */}
@@ -64,6 +85,7 @@ const Chefs = () => {
                 ))}
             </div>
 
+
             <div>
 
                 <h1 id='ho'>Why We are Best</h1>
@@ -86,27 +108,7 @@ const Chefs = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <h1 id='ho'>Recent Top Rated  Food</h1>
-                <div id='best-section'>
 
-                    <div className='chef-card'>
-                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/200401171803-07-best-turkish-foods-inegol-kofte.jpg?q=x_0,y_0,h_1688,w_2999,c_fill/h_720,w_1280/f_webp" alt="" />
-                        <h4>Inegol kofte</h4>
-                        <p>Grilled meatballs made using ground beef or lamb, breadcrumbs and onions.</p>
-                    </div>
-                    <div className='chef-card'>
-                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/200401171826-08-best-turkish-foods-iskender-kebab.jpg?q=x_0,y_0,h_1688,w_2999,c_fill/h_720,w_1280/f_webp" alt="" />
-                        <h4>Iskender kebab</h4>
-                        <p>Iskender kebab is named after İskender Efendi, the man who invented the dish.</p>
-                    </div>
-                    <div className='chef-card'>
-                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/200401171851-09-best-turkish-foods-cag-kebab.jpg?q=x_0,y_0,h_1688,w_2999,c_fill/h_720,w_1280/f_webp" alt="" />
-                        <h4>Cag kebab</h4>
-                        <p>Marinated lamb roasted on a horizontal rotating spit and cooked over a wood fire.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 };

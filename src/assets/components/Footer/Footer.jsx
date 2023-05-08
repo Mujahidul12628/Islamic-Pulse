@@ -17,7 +17,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <p ><small>All right reserve &copy;Chef Recipe Hunter</small> </p>
+                        <p ><small id='copy-right'>All right reserved &copy; Savoury Bite</small> </p>
                     </div>
                 </div>
             </div>
