@@ -5,30 +5,25 @@
     align-items: center;
     width: 40%;
 
-    /* margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #828181;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-
 }
 
 .form-container input {
     margin: 10px 10px;
-    padding: 10px 10px;
+    padding: 10px;
     width: 80%;
     border: 1px solid rgb(164, 163, 163);
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.form-container button {
-    margin: 10px 0px;
-    padding: 10px 20px;
-
+#register-btn {
     border: 1px solid rgb(164, 163, 163);
     border-radius: 5px;
-    background-color: rgb(154, 79, 219);
+    background-color: rgb(16, 175, 101);
     color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 80%;
 }
 
 .form-container p {
@@ -36,11 +31,17 @@
 }
 
 .form-container {
-    border: 1px solid rgb(164, 163, 163);
-    border-radius: 5px;
-    /* width: 500px; */
-    margin: 0 auto;
-    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(233, 243, 243);
+}
+
+.register-link {
+    text-decoration: none;
+    color: blue;
+
 }
 
 #successText {

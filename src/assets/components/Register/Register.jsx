@@ -20,7 +20,6 @@ const Register = () => {
         console.log(name, email, password)
         if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
             setError("password not valid!!! minimum 8 character(at least one letter and one number)");
-            console.log("password tik nai")
             return;
         }
         if (name, email, password) {
@@ -28,8 +27,11 @@ const Register = () => {
                 .then((result) => {
                     console.log(result.user);
                     const user = result.user;
-                    setSuccess("User Created Successfully")
-                    setError('')
+                    setSuccess("User Created Successfully");
+                    setError("");
+                    setName("");
+                    setEmail("");
+                    setPassword("");
                 })
                 .catch((err) => {
                     console.log(err.message);
@@ -68,23 +70,17 @@ const Register = () => {
                                     onChange={(e) => setPassword(e.target.value)}
                                     className="password p-3 m-2"
                                     type="password"
-                                    placeholder="type your password"
+                                    placeholder="8 char password including (1 letter and 1 number)"
                                     required
-                                />
-                                <input
-                                    onChange={(e) => setName(e.target.value)}
-                                    type="text"
-                                    placeholder="Photo url"
-
                                 />
                                 <button
                                     onClick={handleRegistration}
-                                    className="btn btn-info w-75 p-2 mt-3"
+                                    id="register-btn"
                                 >
                                     Register
                                 </button>
                                 <p className="p-2">
-                                    Already have an account? <Link to='/login'>Login</Link>
+                                    Already have an account? <Link to='/login' className='register-link'>Login</Link>
                                 </p>
                             </form>
                         </div>
@@ -101,7 +97,106 @@ export default Register;
 
 
 
-// import React, { useState } from 'react';
+// import React, { useContext, useState } from "react";
+// import { Link } from "react-router-dom";
+// import { AuthContext } from "../../Provider/AuthProvider";
+// import "./Register.css";
+
+// const Register = () => {
+//   const { registerUser } = useContext(AuthContext);
+
+//   const [email, setEmail] = useState("");
+//   const [name, setName] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [photo, setPhoto] = useState("");
+//   const [success, setSuccess] = useState("");
+//   const [error, setError] = useState("");
+
+//   const handleRegistration = (event) => {
+//     event.preventDefault();
+
+//     if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+//       setError(
+//         "Password not valid! Minimum 8 characters (at least one letter and one number)."
+//       );
+//       return;
+//     }
+
+//     if (name && email && password) {
+//       registerUser(name, email, password)
+//         .then((result) => {
+//           console.log(result.user);
+//           const user = result.user;
+//           setSuccess("User created successfully!");
+//           setError("");
+//           setName("");
+//           setEmail("");
+//           setPassword("");
+//           setPhoto("");
+//         })
+//         .catch((err) => {
+//           console.log(err.message);
+//           setError(err.message);
+//           setSuccess("");
+//         });
+//     } else {
+//       setError("Please fill in all fields.");
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <div className="container">
+//         <div className="row d-flex justify-content-center align-items-center">
+//           <div className="col-md-6 ">
+//             <div className="border w-100 m-auto text-center p-5">
+//               <p id="errorText">{error}</p>
+//               <p id="successText">{success}</p>
+//               <form action="" className="form-container">
+//                 <input
+//                   onChange={(e) => setName(e.target.value)}
+//                   className="email p-3 m-2"
+//                   type="text"
+//                   placeholder="Enter your name"
+//                   value={name}
+//                   required
+//                 />
+//                 <input
+//                   onChange={(e) => setEmail(e.target.value)}
+//                   className="email p-3 m-2"
+//                   type="email"
+//                   placeholder="Enter your email"
+//                   value={email}
+//                   required
+//                 />
+//                 <input
+//                   onChange={(e) => setPassword(e.target.value)}
+//                   className="password p-3 m-2"
+//                   type="password"
+//                   placeholder="8 char password including (1 letter and 1 number)"
+//                   value={password}
+//                   required
+//                 />
+//                 <button onClick={handleRegistration} id="register-btn">
+//                   Register
+//                 </button>
+//                 <p className="p-2">
+//                   Already have an account?{" "}
+//                   <Link to="/login" className="register-link">
+//                     Login
+//                   </Link>
+//                 </p>
+//               </form>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Register;
+
 // import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 // import app from '../../firebase/firebase.config';
 // import { Link } from 'react-router-dom'

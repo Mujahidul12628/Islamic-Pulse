@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
+import './Login.css'
 
 // import { useLocation, useHistory, useNavigate } from "react-router";
 
@@ -51,14 +52,13 @@ const Login = () => {
                                 />
                                 <button
                                     onClick={handleLogin}
-                                    className="btn btn-info w-75 p-2 mt-3"
+                                    id="login-btn"
                                 >
                                     Login
                                 </button>
                                 <p className="p-2">
-                                    <small className="text-info">
-                                        Do Not Have Account ? Please <Link to='/register'>Registration</Link>
-                                    </small>
+
+                                    Do Not Have Account ? Please <Link to='/register' className='register-link'>Register</Link> now
                                 </p>
                             </form>
                         </div>
