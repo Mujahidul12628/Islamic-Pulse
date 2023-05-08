@@ -53,8 +53,8 @@ const Menubar = () => {
                         )}
                     </div>
 
-                    {/* <img id="image-url" title={user?.email} src={user?.email} alt="" /> */}
-                    <img src={user?.email} alt="" />
+                    <div id="email" title={user?.email}>{user?.email} </div>
+
 
                 </div>
 

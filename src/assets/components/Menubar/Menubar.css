@@ -58,6 +58,13 @@
     border-radius: 50%;
 }
 
+#email {
+    border: 1px solid rgb(48, 236, 236);
+    color: rgb(45, 159, 163);
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+
 .logo-container {
 
     color: rgb(19, 194, 113);
