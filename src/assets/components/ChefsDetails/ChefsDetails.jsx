@@ -17,7 +17,7 @@ const ChefsDetails = () => {
     const [chefData, setChefData] = useState(null);
 
     useEffect(() => {
-        fetch(`https://chef-recipe-server-mujahidul12628.vercel.app/chefData/${id}`)
+        fetch(`https://savoury-bite-server-mujahidul12628.vercel.app/chefData/${id}`)
             .then((res) => res.json())
             .then((data) => setChefData(data));
     }, [id]);

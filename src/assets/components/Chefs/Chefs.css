@@ -17,7 +17,8 @@ h1 {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
-    background-color: rgb(240, 231, 248);
+    /* background-color: rgb(240, 231, 248); */
+    background-color: rgb(225, 241, 242);
 
 }
 
@@ -44,6 +45,7 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     background-color: #f8f1f8;
+    background-color: rgb(225, 241, 242);
 }
 
 #welcoming-msg {
@@ -60,6 +62,16 @@ h1 {
     padding: 5px 10px;
     border: 2px solid rgb(16, 175, 101);
     border-radius: 3px;
+}
+
+.best-section-class {
+    text-align: center;
+    font: bold;
+    color: rgb(16, 175, 101);
+}
+
+.best-section-p {
+    text-align: justify;
 }
 
 img {
@@ -99,6 +111,7 @@ h1 {
     height: 4em;
     animation: spinner 1s linear infinite;
 }
+
 
 @keyframes spinner {
     to {

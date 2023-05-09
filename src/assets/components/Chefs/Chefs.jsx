@@ -2,13 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import './Chefs.css'
 import banner from '../../images/banner.jpeg'
+import service from '../../images/service.png'
+import food from '../../images/food.png'
+import chefsImg from '../../images/chefsImg.png'
 
 const Chefs = () => {
     const [chefData, setChefData] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("https://chef-recipe-server-mujahidul12628.vercel.app/chefData")
+        // fetch("https://chef-recipe-server-mujahidul12628.vercel.app/chefData")
+        fetch("http://localhost:5555/chefData")
             .then((response) => response.json())
             .then((data) => {
                 setChefData(data);
@@ -92,19 +96,20 @@ const Chefs = () => {
                 <div id='best-section'>
 
                     <div className='chef-card'>
-                        <img src="https://cdn3.iconfinder.com/data/icons/food-set-2-1/91/Food_C147-512.png" alt="" />
-                        <h4>Best Food</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat alias quaerat voluptate repudiandae? Aliquid accusamus voluptas maiores ducimus repudiandae eum.</p>
+                        <img src={food} alt="food" />
+                        <h3 className='best-section-class'>Best Food</h3>
+                        <p className='best-section-p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat alias quaerat voluptate repudiandae? Aliquid accusamus voluptas maiores ducimus repudiandae eum.</p>
                     </div>
                     <div className='chef-card'>
-                        <img src="https://kitchenbox.co.za/wp-content/uploads/2021/03/icon-food-delivery.png" alt="" />
-                        <h4>Best Service</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat alias quaerat voluptate repudiandae? Aliquid accusamus voluptas maiores ducimus repudiandae eum.</p>
+
+                        <img src={service} alt="service" />
+                        <h3 className='best-section-class'>Best Service</h3>
+                        <p className='best-section-p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat alias quaerat voluptate repudiandae? Aliquid accusamus voluptas maiores ducimus repudiandae eum.</p>
                     </div>
                     <div className='chef-card'>
-                        <img src="https://www.americancentury.com/content/ipro/en/insights/key-topics/volatility/rebalancing-in-style/_jcr_content/root/responsivegrid_1188506219/responsivegrid/responsivegrid/image.coreimg.png/1589486111689/icon-green-chef-person.png" alt="" />
-                        <h4>Best Chef</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat alias quaerat voluptate repudiandae? Aliquid accusamus voluptas maiores ducimus repudiandae eum.</p>
+                        <img src={chefsImg} alt="chefs" />
+                        <h3 className='best-section-class'>Best Chef</h3>
+                        <p className='best-section-p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat alias quaerat voluptate repudiandae? Aliquid accusamus voluptas maiores ducimus repudiandae eum.</p>
                     </div>
                 </div>
             </div>
