@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import './Chefs.css'
-import banner from '../../images/banner.jpeg'
+
+
 import service from '../../images/service.png'
 import food from '../../images/food.png'
 import chefsImg from '../../images/chefsImg.png'
