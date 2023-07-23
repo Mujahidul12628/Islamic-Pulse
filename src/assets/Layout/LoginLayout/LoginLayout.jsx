@@ -5,7 +5,7 @@ import Menubar from "../../components/Menubar/Menubar";
 
 const LoginLayout = () => {
     return (
-        <div>
+        <div >
             <Menubar></Menubar>
             <Outlet></Outlet>
         </div>
