@@ -9,7 +9,7 @@ import Loader from "../pages/shared/Loader";
 const RootLayout = () => {
   const { loading } = useContext(AuthContext);
   return (
-    <div>
+    <div className="mx-auto max-w-7xl">
       {loading ? (
         <Loader></Loader>
       ) : (

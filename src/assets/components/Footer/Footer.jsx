@@ -12,7 +12,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="mx-auto footer max-w-7xl">
+        <footer className="p-0 mx-auto footer max-w-7xl">
             <div className="container">
                 <div className='footer-body'>
 
