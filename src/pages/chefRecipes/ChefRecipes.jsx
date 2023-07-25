@@ -12,7 +12,7 @@ const ChefRecipes = () => {
 
   return (
     <div className="mb-10">
-      <div className="flex flex-col gap-10 px-5 py-10 bg-amber-50 sm:flex-row sm:px-10">
+      <div className="flex flex-col gap-10 px-5 py-10 bg-green-50 sm:flex-row sm:px-10">
         <div className="relative flex-1 h-96 sm:w-1/2 md:w-1/3">
           <img
             className="w-full h-full rounded-lg shadow-md shadow-gray-400"

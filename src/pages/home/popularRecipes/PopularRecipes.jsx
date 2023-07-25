@@ -30,7 +30,7 @@ const PopularRecipes = () => {
   };
 
   return (
-    <div id="popularRecipes" className="my-16 px-5 sm:px-10">
+    <div id="popularRecipes" className="my-10 px-5 xl:px-0">
       {loading ? (
         <div>Loading..</div>
       ) : (
@@ -44,7 +44,7 @@ const PopularRecipes = () => {
             perhaps it was quite tired of being all alone here!' As she said to
             herself; 'I should like to see what was going on, as she could do.
           </p>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-5">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-5 ">
             {displayRecipes.map((recipe) => (
               <RecipeCard key={recipe.recipe_id} recipe={recipe}></RecipeCard>
             ))}
@@ -52,7 +52,7 @@ const PopularRecipes = () => {
           <div className="text-center mt-4">
             <button
               onClick={handleDisplayRecipes}
-              className="text-4xl p-2 text-slate-500 bg-gray-200 rounded-full"
+              className="text-4xl p-2 text-green-500 bg-green-50 rounded-full"
             >
               {displayRecipes.length > 8 ? <FaChevronUp /> : <FaChevronDown />}
             </button>

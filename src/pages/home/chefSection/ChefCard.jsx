@@ -16,7 +16,7 @@ const ChefCard = ({ chef }) => {
   } = chef;
   const { setChef } = useContext(AuthContext);
   return (
-    <div className="w-full pb-5 text-gray-800 rounded-md box-shadow shadow-amber-200">
+    <div className="w-full pb-5 text-gray-800 rounded-md box-shadow shadow-green-200">
       <div className="relative w-full h-56 lg:h-60 xl:h-72 rounded-t-md">
         <LazyLoadImage
           src={
@@ -49,7 +49,7 @@ const ChefCard = ({ chef }) => {
           onClick={() => {
             setChef(chef), scrollTop();
           }}
-          className="px-3 pt-1 pb-2 duration-200 border rounded-md border-amber-300 hover:bg-amber-500 hover:text-white hover:underline underline-offset-4"
+          className="px-3 pt-1 pb-2 duration-200 border rounded-md border-green-300 hover:bg-green-500 hover:text-white hover:underline underline-offset-4"
         >
           View Recipes
         </Link>

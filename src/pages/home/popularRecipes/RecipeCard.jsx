@@ -10,7 +10,7 @@ const RecipeCard = ({ recipe }) => {
   const { recipe_id, recipe_name, rating, picture } = recipe;
 
   const StarDrawing = (
-    <path
+    <path className="bg-red"
       d="M398.799,141.794c-43.394-3.977-86.776-6.52-130.158-8.418C258.835,99.302,242.633-4.751,193.173,0.169
             c-39.659,3.944-61.012,90.515-73.08,130.306c-32.333,0.283-64.692,1.062-97.09,2.416c-14.735,0.615-27.908,17.9-18.207,31.732
             c19.157,27.316,44.198,49.389,70.487,70.103c-11.83,38.196-21.665,77.499-29.759,116.53c-3.504,16.91-5.31,32.212,3.881,44.82
@@ -37,7 +37,7 @@ const RecipeCard = ({ recipe }) => {
   };
 
   return (
-    <div className="w-full border border-amber-100 shadow pb-2 rounded-md text-gray-800">
+    <div className="w-full border border-green-100 box-shadow pb-2 rounded-md text-gray-800">
       <LazyLoadImage
         src={
           picture ||
@@ -67,7 +67,7 @@ const RecipeCard = ({ recipe }) => {
         </div>
         <Link
           to={`/recipe/${recipe_id}`}
-          className="px-5 pt-1 pb-2 border border-amber-500 hover:bg-amber-500 hover:text-white font-semibold hover:underline underline-offset-2 duration-200 rounded-md shadow-md"
+          className="px-5 pt-1 pb-2 border border-green-500 hover:bg-green-500 hover:text-white font-semibold hover:underline underline-offset-2 duration-200 rounded-md shadow-md"
         >
           Details
         </Link>
