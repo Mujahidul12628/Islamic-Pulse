@@ -21,30 +21,29 @@ const Navbar = () => {
       <div className="flex justify-between items-center sticky sm:hidden left-0 top-0 z-50 bg-white w-full px-5 py-2">
         <Link to={"/"}>
           <p className="text-2xl font-bold" onClick={() => scrollTop()}>
-            Recipes<span className="text-amber-500">Hub</span>
+            Savoury<span className="text-green-500">Bite</span>
           </p>
         </Link>
         <div className="" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? (
-            <HiXMark className="h-10 w-10 text-amber-500" />
+            <HiXMark className="h-10 w-10 text-green-500" />
           ) : (
-            <HiBars3 className="h-10 w-10 text-amber-500" />
+            <HiBars3 className="h-10 w-10 text-green-500" />
           )}
         </div>
       </div>
       <nav
-        className={`flex flex-col sm:flex-row justify-between items-center gap-3 py-3 px-5 sm:px-8 bg-white sticky sm:top-0 sm:rounded-none z-40 border-b w-full ${
-          isMenuOpen
-            ? "top-10 block rounded-md duration-500"
-            : "-top-60 hidden sm:top-0 sm:inline-flex"
-        }`}
+        className={`flex flex-col sm:flex-row justify-between items-center gap-3 py-3 px-5 sm:px-8 bg-white sticky sm:top-0 sm:rounded-none z-40 border-b w-full ${isMenuOpen
+          ? "top-10 block rounded-md duration-500"
+          : "-top-60 hidden sm:top-0 sm:inline-flex"
+          }`}
       >
         <Link to={"/"}>
           <p
             className="text-2xl font-bold hidden sm:block"
             onClick={() => scrollTop()}
           >
-            Recipes<span className="text-amber-500">Hub</span>
+            Savoury <span className="text-green-500">Bite</span>
           </p>
         </Link>
         <div className="flex items-center justify-between gap-5">
@@ -54,7 +53,7 @@ const Navbar = () => {
                 onClick={() => scrollTop()}
                 to={"/"}
                 className={({ isActive }) =>
-                  isActive ? "text-amber-500 underline underline-offset-2" : ""
+                  isActive ? "text-green-500 underline underline-offset-2" : ""
                 }
               >
                 Home
@@ -65,7 +64,7 @@ const Navbar = () => {
                 onClick={() => scrollTop()}
                 to={"/blog"}
                 className={({ isActive }) =>
-                  isActive ? "text-amber-500 underline underline-offset-2" : ""
+                  isActive ? "text-green-500 underline underline-offset-2" : ""
                 }
               >
                 Blog
@@ -88,9 +87,8 @@ const Navbar = () => {
                     onMouseLeave={() => setShowTooltip(false)}
                   />
                   <span
-                    className={`absolute top-1/2 right-full py-2 px-4 bg-gray-700 text-white text-sm rounded-lg ${
-                      showTooltip ? "block" : "hidden"
-                    }`}
+                    className={`absolute top-1/2 right-full py-2 px-4 bg-gray-700 text-white text-sm rounded-lg ${showTooltip ? "block" : "hidden"
+                      }`}
                   >
                     {user?.displayName}
                   </span>
@@ -107,7 +105,7 @@ const Navbar = () => {
               <Link
                 onClick={() => toggleLogin()}
                 to={"/login"}
-                className="bg-amber-500 text-white font-semibold rounded-md px-3 py-1 text-lg"
+                className="bg-green-500 text-white font-semibold rounded-md px-3 py-1 text-lg"
               >
                 Login
               </Link>
@@ -115,7 +113,7 @@ const Navbar = () => {
               <Link
                 onClick={() => toggleLogin()}
                 to={"/registration"}
-                className="border border-amber-500 hover:bg-amber-500 hover:text-white duration-200 font-semibold rounded-md px-3 py-1 text-lg"
+                className="border border-green-500 hover:bg-green-500 hover:text-white duration-200 font-semibold rounded-md px-3 py-1 text-lg"
               >
                 Registration
               </Link>

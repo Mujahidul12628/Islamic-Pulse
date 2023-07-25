@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-slate-800">
       <div className="mx-auto w-full max-w-screen-xl px-5 sm:px-10 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to={"/"}>
               <p className="text-3xl font-bold text-white">
-                Recipes<span className="text-amber-500">Hub</span>
+                Savoury<span className="text-green-500"> Bite</span>
               </p>
             </Link>
             <div className="mx-auto max-w-screen-xl mt-10">
