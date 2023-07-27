@@ -88,7 +88,7 @@ const Registration = () => {
             Name
           </label>
           <input
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-amber-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
             type="text"
             id="name"
             name="name"
@@ -104,7 +104,7 @@ const Registration = () => {
             Photo Url <small className="font-normal">(Optional)</small>
           </label>
           <input
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-amber-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
             type="text"
             id="profilePhoto"
             name="profilePhoto"
@@ -119,7 +119,7 @@ const Registration = () => {
             Email
           </label>
           <input
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-amber-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
             type="email"
             id="email"
             name="email"
@@ -134,7 +134,7 @@ const Registration = () => {
           >
             Password
           </label>
-          <div className="w-full flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus-within:border-amber-500">
+          <div className="w-full flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus-within:border-green-500">
             <input
               className="outline-none w-full"
               type={firstIsShow ? "text" : "password"}
@@ -163,7 +163,7 @@ const Registration = () => {
           >
             Confirm Password
           </label>
-          <div className="w-full flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus-within:border-amber-500">
+          <div className="w-full flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus-within:border-green-500">
             <input
               className="outline-none w-full"
               type={secondIsShow ? "text" : "password"}
@@ -214,7 +214,7 @@ const Registration = () => {
           )}
         </p>
         <button
-          className="w-full bg-amber-500 text-white text-sm font-bold py-2 px-4 my-2 rounded-md hover:bg-amber-600 transition duration-300"
+          className="w-full bg-green-500 text-white text-sm font-bold py-2 px-4 my-2 rounded-md hover:bg-green-600 transition duration-300"
           type="submit"
         >
           Registration
@@ -249,7 +249,7 @@ const Registration = () => {
         <hr />
         <p className="text-center mt-2">
           Already have an account?{" "}
-          <span className="text-amber-500 font-semibold underline underline-offset-2">
+          <span className="text-green-500 font-semibold underline underline-offset-2">
             <Link to={"/login"}>Login</Link>
           </span>
         </p>

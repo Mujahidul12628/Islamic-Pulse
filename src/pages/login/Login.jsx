@@ -81,7 +81,7 @@ const Login = () => {
             Email
           </label>
           <input
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-amber-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
             type="email"
             id="email"
             name="email"
@@ -96,7 +96,7 @@ const Login = () => {
           >
             Password
           </label>
-          <div className="w-full flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus-within:border-amber-500">
+          <div className="w-full flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus-within:border-green-500">
             <input
               className="outline-none w-full"
               type={isShow ? "text" : "password"}
@@ -140,7 +140,7 @@ const Login = () => {
           )}
         </p>
         <button
-          className="w-full bg-amber-500 text-white text-sm font-bold py-2 px-4 mt-2 mb-4 rounded-md hover:bg-amber-600 transition duration-300"
+          className="w-full bg-green-500 text-white text-sm font-bold py-2 px-4 mt-2 mb-4 rounded-md hover:bg-green-600 transition duration-300"
           type="submit"
         >
           Login
@@ -175,7 +175,7 @@ const Login = () => {
         <hr />
         <p className="text-center mt-2">
           Don't you have an account yet?{" "}
-          <span className="text-amber-500 font-semibold underline underline-offset-2">
+          <span className="text-green-500 font-semibold underline underline-offset-2">
             <Link to={"/registration"}>Registration</Link>
           </span>
         </p>
