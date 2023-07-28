@@ -18,8 +18,12 @@ const Register = () => {
     const handleRegistration = (event) => {
         event.preventDefault();
         console.log(name, email, password)
-        if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
-            setError("password not valid!!! minimum 8 character(at least one letter and one number)");
+        // if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+        //     setError("password not valid!!! minimum 8 character(at least one letter and one number)");
+        //     return;
+        // }
+        if (!/^.{6,}$/.test(password)) {
+            setError("Password not valid!!! It should be 6 characters or longer.");
             return;
         }
         if (name, email, password) {

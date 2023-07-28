@@ -37,12 +37,14 @@ const Registration = () => {
     } else if (password !== confirmPassword) {
       return setError("Password doesn't match!");
     } else if (password) {
-      const regex =
-        /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])/;
+      // const regex =
+      //   /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])/;
+
+      const regex = /^.{6,}$/;
       if (!regex.test(password)) {
-        return setError("Enter a strong password!");
+        return setError("Password must be 6 or more character!");
       } else if (password.length < 6) {
-        return setError("Enter a password with at least 6 digits!");
+        return setError("Password must be 6 or more character!");
       }
     }
     // Check terms and condition field

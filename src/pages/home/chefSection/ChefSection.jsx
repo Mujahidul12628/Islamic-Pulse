@@ -4,7 +4,7 @@ import ChefCard from "./ChefCard";
 const ChefSection = () => {
   const [chef, setChef] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5555/chef")
+    fetch("https://savoury-bite-server-mujahidul12628.vercel.app/chef")
       .then((res) => res.json())
       .then((data) => setChef(data))
       .catch((error) => console.log(error));

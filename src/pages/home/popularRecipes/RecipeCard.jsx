@@ -67,7 +67,7 @@ const RecipeCard = ({ recipe }) => {
         </div>
         <Link
           to={`/recipe/${recipe_id}`}
-          className="px-5 pt-1 pb-2 border border-green-500 hover:bg-green-500 hover:text-white font-semibold hover:underline underline-offset-2 duration-200 rounded-md shadow-md"
+          className="px-5 pt-1 pb-2 border border-green-500 hover:bg-green-500 hover:text-white font-semibold underline-offset-2 duration-200 rounded-md shadow-md"
         >
           Details
         </Link>
