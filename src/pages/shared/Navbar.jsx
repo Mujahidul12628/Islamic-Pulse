@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center sticky sm:hidden left-0 top-0 z-50 bg-white w-full px-5 py-2">
         <Link to={"/"}>
           <p className="text-2xl font-bold" onClick={() => scrollTop()}>
-            Savoury<span className="text-green-500">Bite</span>
+            Islamic<span className="text-green-500">Pulse</span>
           </p>
         </Link>
         <div className="" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -43,7 +43,7 @@ const Navbar = () => {
             className="text-2xl font-bold hidden sm:block"
             onClick={() => scrollTop()}
           >
-            Savoury <span className="text-green-500">Bite</span>
+            Islamic <span className="text-green-500">Pulse</span>
           </p>
         </Link>
         <div className="flex items-center justify-between gap-5">

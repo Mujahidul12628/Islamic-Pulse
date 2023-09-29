@@ -1,39 +1,65 @@
 [
     {
-        "name": "Adana Kebab",
+        "name": "The Five Pillars of Islam",
         "ingredients": [
-            "500g lamb mince",
-            "1 onion, finely chopped",
-            "1 tsp ground cumin",
-            "1 tsp sumac",
-            "1 tsp red pepper flakes",
-            "Salt and black pepper to taste"
+            {
+                "title": "Shahada (Faith)",
+                "description": "Understand the declaration of faith in Islam and its significance."
+            },
+            {
+                "title": "Salat (Prayer)",
+                "description": "Explore the importance of daily prayers and their method of performance."
+            },
+            {
+                "title": "Zakat (Charity)",
+                "description": "Learn about the obligation of giving to charity in Islam and its purposes."
+            },
+            {
+                "title": "Sawm (Fasting)",
+                "description": "Discover the significance of fasting during the month of Ramadan."
+            },
+            {
+                "title": "Hajj (Pilgrimage)",
+                "description": "Explore the pilgrimage to Mecca and its rituals."
+            }
         ],
         "method": "1. In a large bowl, mix together the lamb mince, onion, cumin, sumac, red pepper flakes, salt, and black pepper.2. Divide the mixture into 8 portions and shape each into a long sausage shape around a skewer.3. Grill the kebabs over medium-high heat for 5-6 minutes on each side, or until cooked through.",
         "rating": 4.5
     },
     {
-        "name": "Mercimek Köftesi",
+        "name": "Quranic Studies",
         "ingredients": [
-            "1 cup red lentils",
-            "2 cups water",
-            "1 cup fine bulgur",
-            "1/4 cup olive oil",
-            "1/4 cup lemon juice",
-            "1 tbsp tomato paste"
+            {
+                "title": "Structure of the Quran",
+                "description": "Learn about the organization and chapters (Surahs) of the Quran."
+            },
+            {
+                "title": "Tafsir (Interpretation)",
+                "description": "Understand the scholarly interpretation of Quranic verses (Ayahs)."
+            },
+            {
+                "title": "Significance of Surahs",
+                "description": "Explore the meanings and themes of specific chapters in the Quran."
+            }
         ],
         "method": "1. Rinse the lentils and place them in a pot with the water. Bring to a boil, then reduce the heat and simmer for 20 minutes, or until the lentils are soft and the water is absorbed.2. Mix together the cooked lentils, bulgur, onion, olive oil, lemon juice, tomato paste, salt, cumin, black pepper.",
         "rating": 4.2
     },
     {
-        "name": "Baklava",
+        "name": "Hadith and Sunnah",
         "ingredients": [
-            "1 lb phyllo dough",
-            "2 cups finely chopped walnuts",
-            "1 cup sugar",
-            "1 cup water",
-            "1/2 cup honey",
-            "1/2 cup unsalted butter, melted"
+            {
+                "title": "Importance of Hadith",
+                "description": "Understand the role of Hadith in Islamic jurisprudence."
+            },
+            {
+                "title": "Hadith Terminology",
+                "description": "Learn key terms used in Hadith scholarship."
+            },
+            {
+                "title": "Following the Sunnah",
+                "description": "Explore the significance of following the Prophet's teachings."
+            }
         ],
         "method": "1. Preheat the oven to 350°F (175°C).2. Mix together the walnuts and sugar in a bowl.3. Grease a baking dish with some of the melted butter.4. Lay a sheet of phyllo dough in the bottom of the baking dish, then brush with melted butter. Repeat with 5 more sheets of phyllo dough, brushing each with butter.",
         "rating": 4.8

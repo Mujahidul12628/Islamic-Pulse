@@ -16,8 +16,8 @@ const ChefCard = ({ chef }) => {
   } = chef;
   const { setChef } = useContext(AuthContext);
   return (
-    <div className="w-full pb-5 text-gray-800 rounded-md box-shadow shadow-green-200">
-      <div className="relative w-full h-56 lg:h-60 xl:h-72 rounded-t-md">
+    <div className="w-full pb-5 mx-auto text-gray-800 rounded-md box-shadow shadow-green-200">
+      <div className="relative w-full rounded-t-md">
         <LazyLoadImage
           src={
             picture ||
@@ -41,15 +41,15 @@ const ChefCard = ({ chef }) => {
           <span className="font-semibold">{years_of_experience} years</span>
         </p>
         <p className="mb-5 text-md">
-          Total Recipes:{" "}
-          <span className="font-semibold">{num_recipes} items</span>
+          Course Conduct:{" "}
+          <span className="font-semibold">{num_recipes} times</span>
         </p>
         <Link
           to={`/chef/${chef_id}`}
           onClick={() => {
             setChef(chef), scrollTop();
           }}
-          className="px-3 pt-1 pb-2 duration-200 border rounded-md border-green-300 hover:bg-green-500 hover:text-white hover:underline underline-offset-4"
+          className="px-3 pt-1 pb-2 duration-200 border border-green-300 rounded-md hover:bg-green-500 hover:text-white hover:underline underline-offset-4"
         >
           View Recipes
         </Link>

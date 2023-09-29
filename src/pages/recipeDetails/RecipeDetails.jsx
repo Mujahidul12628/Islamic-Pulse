@@ -4,12 +4,12 @@ import { scrollTop } from "../../utils/utils";
 
 const RecipeDetails = () => {
   const { recipe_name, ingredients, cooking_method, picture } = useLoaderData();
-  // split cooking methods string by \n
+
   const cookingMethodLines = cooking_method.split("\n");
 
   return (
     <div
-      className="sm:my-10 sm:pr-10 grid items-center sm:grid-cols-5 gap-10"
+      className="grid items-center gap-10 sm:my-10 sm:pr-10 sm:grid-cols-5"
       onLoad={scrollTop()}
     >
       <img
@@ -20,8 +20,11 @@ const RecipeDetails = () => {
         }
         alt=""
       />
-      <div className="sm:col-span-3 px-5 pb-10">
-        <h4 className="text-3xl font-bold">{recipe_name}</h4>
+      <div className="px-5 pb-10 sm:col-span-3">
+        <h4 className="text-3xl font-bold">
+          "jkjwjwwxanxanxakxnax"
+          {/* {recipe_name} */}
+        </h4>
         <div className="mt-5">
           <h5 className="text-2xl font-semibold">Ingredients</h5>
           <ul className="ml-5 list-disc">

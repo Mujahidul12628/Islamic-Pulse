@@ -3,13 +3,13 @@ import Gallery from "../Gallery/Gallery";
 
 const CateringSection = () => {
   return (
-    <div className="grid items-center justify-center grid-cols-2 gap-10  py-10 mt-10 sm-grid-cols-5 md:grid-cols-4 px-5 xl:px-0 ">
+    <div className="grid items-center justify-center grid-cols-2 gap-10 px-5 py-10 mt-10 sm-grid-cols-5 md:grid-cols-4 xl:px-0 ">
       <div className="w-full h-full col-span-2 sm:col-span-3 md:col-span-2 " >
         <Gallery ></Gallery>
       </div>
 
       <div className="col-span-2">
-        <h4 className="text-2xl font-semibold tracking-wide underline text-green-500 underline-offset-2">
+        <h4 className="text-2xl font-semibold tracking-wide text-green-500 underline underline-offset-2">
           Catering
         </h4>
         <h2 className="text-2xl font-semibold">

@@ -6,9 +6,9 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyD-_F-aWvAGMXCOu9JGjU2Cdn34-36s_l4",
-  authDomain: "savoury-bite.firebaseapp.com",
-  projectId: "savoury-bite",
-  storageBucket: "savoury-bite.appspot.com",
+  authDomain: "Islamic-Pulse.firebaseapp.com",
+  projectId: "Islamic-Pulse",
+  storageBucket: "Islamic-Pulse.appspot.com",
   messagingSenderId: "681059469997",
   appId: "1:681059469997:web:4aa88a18b195cfe8559424"
 };

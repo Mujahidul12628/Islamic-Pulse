@@ -9,7 +9,7 @@ const PopularRecipes = () => {
   const { loading } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch("https://savoury-bite-server-mujahidul12628.vercel.app/recipes")
+    fetch("http://localhost:5555/recipes")
       .then((res) => res.json())
       .then((data) => setRecipes(data))
       .catch((error) => console.log(error));

@@ -67,15 +67,15 @@ const Login = () => {
       .catch((error) => setError(error.message));
   };
   return (
-    <div className="mx-auto py-8">
-      <h1 className="text-2xl font-bold mb-6 text-center">Login Account</h1>
+    <div className="py-8 mx-auto">
+      <h1 className="mb-6 text-2xl font-bold text-center">Login Account</h1>
       <form
         onSubmit={handleEmailLogin}
-        className="w-full max-w-lg mx-auto bg-white p-4 sm:p-8 rounded-md sm:shadow-md"
+        className="w-full max-w-lg p-4 mx-auto bg-white rounded-md sm:p-8 sm:shadow-md"
       >
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-1"
+            className="block mb-1 text-sm font-bold text-gray-700"
             htmlFor="email"
           >
             Email
@@ -91,14 +91,14 @@ const Login = () => {
         </div>
         <div className="mb-2">
           <label
-            className="block text-gray-700 text-sm font-bold mb-1"
+            className="block mb-1 text-sm font-bold text-gray-700"
             htmlFor="password"
           >
             Password
           </label>
-          <div className="w-full flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus-within:border-green-500">
+          <div className="flex items-center w-full gap-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus-within:border-green-500">
             <input
-              className="outline-none w-full"
+              className="w-full outline-none"
               type={isShow ? "text" : "password"}
               id="password"
               name="password"
@@ -134,22 +134,22 @@ const Login = () => {
         </div>
         <p className="h-6">
           {error && (
-            <small className="text-red-500 flex items-center gap-1">
+            <small className="flex items-center gap-1 text-red-500">
               <CgDanger /> {error}
             </small>
           )}
         </p>
         <button
-          className="w-full bg-green-500 text-white text-sm font-bold py-2 px-4 mt-2 mb-4 rounded-md hover:bg-green-600 transition duration-300"
+          className="w-full px-4 py-2 mt-2 mb-4 text-sm font-bold text-white transition duration-300 bg-green-500 rounded-md hover:bg-green-600"
           type="submit"
         >
           Login
         </button>
-        <p className="text-center text-sm">Or</p>
-        <ul className="flex gap-5 items-center justify-center mt-1 mb-4">
+        <p className="text-sm text-center">Or</p>
+        <ul className="flex items-center justify-center gap-5 mt-1 mb-4">
           <li
             onClick={handleGoogleLogin}
-            className="w-8 bg-gray-200 p-1 rounded-full"
+            className="w-8 p-1 bg-gray-200 rounded-full"
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png"
@@ -158,14 +158,14 @@ const Login = () => {
           </li>
           <li
             onClick={handleGithubLogin}
-            className="w-8 bg-gray-200 p-1 rounded-full"
+            className="w-8 p-1 bg-gray-200 rounded-full"
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
               alt="logo"
             />
           </li>
-          <li className="w-8 bg-gray-200 p-1 rounded-full">
+          <li className="w-8 p-1 bg-gray-200 rounded-full">
             <img
               src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png"
               alt="logo"
@@ -173,9 +173,9 @@ const Login = () => {
           </li>
         </ul>
         <hr />
-        <p className="text-center mt-2">
+        <p className="mt-2 text-center">
           Don't you have an account yet?{" "}
-          <span className="text-green-500 font-semibold underline underline-offset-2">
+          <span className="font-semibold text-green-500 underline underline-offset-2">
             <Link to={"/registration"}>Registration</Link>
           </span>
         </p>

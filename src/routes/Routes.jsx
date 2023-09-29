@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://savoury-bite-server-mujahidul12628.vercel.app/chef/${params.id}`
+            `http://localhost:5555/chef/${params.id}`
           ),
       },
       {
@@ -40,14 +40,14 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://savoury-bite-server-mujahidul12628.vercel.app/recipe/${params.id}`
+            `http://localhost:5555/recipe/${params.id}`
           ),
       },
       {
         path: "/blog",
         element: <Blog></Blog>,
         loader: () =>
-          fetch("https://savoury-bite-server-mujahidul12628.vercel.app/questions"),
+          fetch("http://localhost:5555/questions"),
       },
       {
         path: "/login",
