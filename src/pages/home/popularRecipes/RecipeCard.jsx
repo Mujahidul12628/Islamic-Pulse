@@ -5,9 +5,10 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 import toast from "react-hot-toast";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
 const RecipeCard = ({ recipe }) => {
   const [favorite, setFavorite] = useState(true);
-  const { recipe_id, recipe_name, rating, picture } = recipe;
+  const { recipe_id, course_name, rating, picture, instructor, category } = recipe;
 
   const StarDrawing = (
     <path className="bg-red"
@@ -32,48 +33,57 @@ const RecipeCard = ({ recipe }) => {
       setFavorite(false);
       toast.success("Successfully add!");
     } else {
-      toast.error("You have already add!");
+      toast.error("You have already added!");
     }
   };
 
   return (
-    <div className="w-full border border-green-100 box-shadow pb-2 rounded-md text-gray-800">
+    <div className="w-full pb-2 text-gray-800 border border-green-100 rounded-md shadow-container">
       <LazyLoadImage
         src={
           picture ||
           "https://i.ibb.co/6H8F3BW/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png"
         }
-        className="h-56 lg:h-60 xl:h-72 w-full rounded-t-md"
+        className="w-full rounded-t-md"
         alt="Image"
       />
       <div className="m-2">
-        <div className="flex justify-between items-center gap-5">
-          <h5 className="text-xl font-semibold mt-2 mb-1">{recipe_name}</h5>
-          <span
-            className="text-2xl bg-rose-100 text-rose-500 p-2 rounded-full shadow-inner"
-            onClick={() => handleFavorite()}
-          >
-            {favorite ? <FaRegHeart /> : <FaHeart />}
-          </span>
-        </div>
-        <div className="mt-1 mb-5 flex gap-1 items-center">
+        <h5 className="flex justify-center mt-2 mb-1 text-2xl font-semibold text-center">{course_name}</h5>
+        <h5 className="flex justify-center mb-1 text-lg font-semibold text-center">
+          ({instructor})</h5>
+        <h5 className="flex justify-center mb-1 text-lg text-center">
+          {category}</h5>
+
+        <div className="flex items-center justify-center gap-1 mt-1 mb-5">
           <Rating
             style={{ maxWidth: 120 }}
             value={rating}
             readOnly
             itemStyles={customStyles}
           />{" "}
-          <span>{rating}</span>
+          <div>{rating}</div>
         </div>
-        <Link
-          to={`/recipe/${recipe_id}`}
-          className="px-5 pt-1 pb-2 border border-green-500 hover:bg-green-500 hover:text-white font-semibold underline-offset-2 duration-200 rounded-md shadow-md"
-        >
-          Details
-        </Link>
+        <div className="flex items-center justify-between ">
+
+          <Link
+            to={`/recipe/${recipe_id}`}
+            className="px-5 pt-1 pb-2 font-semibold duration-200 border border-green-500 rounded-md shadow-md hover:bg-green-500 hover:text-white underline-offset-2"
+          >
+            Enter
+          </Link>
+
+          <span
+            className="p-2 text-2xl rounded-full shadow-inner bg-rose-100 text-rose-500"
+            onClick={() => handleFavorite()}
+          >
+            {favorite ? <FaRegHeart /> : <FaHeart />}
+          </span>
+        </div>
+
       </div>
     </div>
   );
 };
 
 export default RecipeCard;
+

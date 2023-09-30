@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { scrollTop } from "../../../utils/utils";
+import { TiSocialFacebookCircular, TiSocialLinkedinCircular, TiSocialGooglePlusCircular, TiSocialTwitterCircular } from "react-icons/ti";
+import './instructor.css'
 
 const ChefCard = ({ chef }) => {
   const {
@@ -16,7 +18,7 @@ const ChefCard = ({ chef }) => {
   } = chef;
   const { setChef } = useContext(AuthContext);
   return (
-    <div className="w-full pb-5 mx-auto text-gray-800 rounded-md box-shadow shadow-green-200">
+    <div className="w-full mx-auto text-gray-800 rounded-md shadow-container shadow-green-200">
       <div className="relative w-full rounded-t-md">
         <LazyLoadImage
           src={
@@ -35,6 +37,13 @@ const ChefCard = ({ chef }) => {
       </div>
       <div className="ml-2">
         <h5 className="mt-2 mb-1 text-xl font-semibold">{chef_name}</h5>
+        <div className="flex justify-start">
+          <a href="https://www.facebook.com/muzahidulislam.rony" target="_blank"><TiSocialFacebookCircular className='mr-1 text-green-600 rounded-full' size={40} /></a>
+          <a href="https://www.linkedin.com/in/mujahidulislam628/" target="_blank"><TiSocialLinkedinCircular className='mr-1 text-green-600 rounded-full' size={40} /></a>
+
+          <TiSocialGooglePlusCircular className='mr-1 text-green-600 rounded-full' size={40} />
+          <TiSocialTwitterCircular className='mr-1 text-green-600 rounded-full' size={40} />
+        </div>
 
         <p className="text-md">
           Experience:{" "}
@@ -44,17 +53,23 @@ const ChefCard = ({ chef }) => {
           Course Conduct:{" "}
           <span className="font-semibold">{num_recipes} times</span>
         </p>
-        <Link
-          to={`/chef/${chef_id}`}
-          onClick={() => {
-            setChef(chef), scrollTop();
-          }}
-          className="px-3 pt-1 pb-2 duration-200 border border-green-300 rounded-md hover:bg-green-500 hover:text-white hover:underline underline-offset-4"
-        >
-          View Recipes
-        </Link>
+
+
+
+
       </div>
+      <Link
+        to={`/chef/${chef_id}`}
+        onClick={() => {
+          setChef(chef), scrollTop();
+        }}
+        className="block w-full py-2 text-center text-white duration-200 bg-green-500 rounded-md text-semibold hover:text-green-500 hover:border-2 hover:border-green-300 bottom hover:bg-transparent"
+      >
+        Details
+      </Link>
+
     </div>
+
   );
 };
 
