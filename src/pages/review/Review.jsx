@@ -7,7 +7,7 @@ const Review = () => {
     const [reviewsData, setReviewsData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5050/reviews')
+        fetch('https://islamic-pulse-server.vercel.app/reviews')
             .then(response => response.json())
             .then(data => setReviewsData(data))
             .catch(error => console.error('Error fetching reviews:', error));

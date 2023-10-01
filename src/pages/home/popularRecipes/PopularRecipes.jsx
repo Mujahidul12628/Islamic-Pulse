@@ -13,7 +13,7 @@ const PopularRecipes = () => {
   const { loading } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch("http://localhost:5050/recipes")
+    fetch("https://islamic-pulse-server.vercel.app/recipes")
       .then((res) => res.json())
       .then((data) => setRecipes(data))
       .catch((error) => console.log(error));

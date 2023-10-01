@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5050/instructor/${params.id}`
+            `https://islamic-pulse-server.vercel.app/instructor/${params.id}`
           ),
       },
       {
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5050/recipe/${params.id}`
+            `https://islamic-pulse-server.vercel.app/recipe/${params.id}`
           ),
       },
       {
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         path: "/blog",
         element: <Blog></Blog>,
         loader: () =>
-          fetch("http://localhost:5050/questions"),
+          fetch("https://islamic-pulse-server.vercel.app/questions"),
       },
       {
         path: "/login",
