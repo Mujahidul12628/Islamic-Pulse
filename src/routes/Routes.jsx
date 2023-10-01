@@ -8,6 +8,7 @@ import Registration from "../pages/registration/Registration";
 import PrivateRoute from "./PrivateRoute";
 import Blog from "../pages/Blog/Blog";
 import ErrorPage from "../pages/shared/ErrorPage";
+import Dashboard from "../pages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5555/chef/${params.id}`
+            `http://localhost:5050/instructor/${params.id}`
           ),
       },
       {
@@ -40,14 +41,18 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5555/recipe/${params.id}`
+            `http://localhost:5050/recipe/${params.id}`
           ),
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard></Dashboard>,
       },
       {
         path: "/blog",
         element: <Blog></Blog>,
         loader: () =>
-          fetch("http://localhost:5555/questions"),
+          fetch("http://localhost:5050/questions"),
       },
       {
         path: "/login",

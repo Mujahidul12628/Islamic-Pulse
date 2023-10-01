@@ -5,6 +5,7 @@ import PopularRecipes from "./popularRecipes/PopularRecipes";
 
 
 
+
 const Home = () => {
   return (
 
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero></Hero>
       <ChefSection></ChefSection>
       <PopularRecipes></PopularRecipes>
+
     </div>
 
   );

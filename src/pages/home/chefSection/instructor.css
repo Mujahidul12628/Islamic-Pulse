@@ -2,3 +2,13 @@
     box-shadow: 0 0 5px rgb(0, 226, 121);
     box-shadow: 0 0 6px rgb(71, 228, 154);
 }
+
+.gradient-container {
+
+    background: linear-gradient(#57C84D, #2EB62C, #83D475);
+    background: rgb(153, 215, 190);
+    background: linear-gradient(90deg, rgba(153, 215, 190, 1) 0%, rgba(35, 184, 107, 1) 30%, rgba(35, 184, 107, 1) 70%, rgba(178, 232, 210, 1) 100%);
+
+    background: linear-gradient(90deg, rgba(153, 215, 190, 1) 0%, rgba(49, 185, 115, 1) 35%, rgba(49, 185, 115, 1) 65%, rgba(178, 232, 210, 1) 100%);
+
+}

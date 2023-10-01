@@ -18,32 +18,32 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center sticky sm:hidden left-0 top-0 z-50 bg-white w-full px-5 py-2">
+      <div className="sticky top-0 left-0 z-50 flex items-center justify-between w-full px-5 py-2 sm:hidden bg-slate-500">
         <Link to={"/"}>
-          <p className="text-2xl font-bold" onClick={() => scrollTop()}>
-            Islamic<span className="text-green-500">Pulse</span>
+          <p className="text-2xl font-bold text-white" onClick={() => scrollTop()}>
+            Islamic<span className="text-white">Pulse</span>
           </p>
         </Link>
         <div className="" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? (
-            <HiXMark className="h-10 w-10 text-green-500" />
+            <HiXMark className="w-10 h-10 text-green-500" />
           ) : (
-            <HiBars3 className="h-10 w-10 text-green-500" />
+            <HiBars3 className="w-10 h-10 text-green-500" />
           )}
         </div>
       </div>
       <nav
-        className={`flex flex-col sm:flex-row justify-between items-center gap-3 py-3 px-5 sm:px-8 bg-white sticky sm:top-0 sm:rounded-none z-40 border-b w-full ${isMenuOpen
+        className={`flex flex-col sm:flex-row justify-between items-center gap-3 py-3 px-5 sm:px-8 bg-slate-500 sticky sm:top-0 sm:rounded-none z-40 border-b w-full ${isMenuOpen
           ? "top-10 block rounded-md duration-500"
           : "-top-60 hidden sm:top-0 sm:inline-flex"
           }`}
       >
         <Link to={"/"}>
           <p
-            className="text-2xl font-bold hidden sm:block"
+            className="hidden text-2xl font-bold text-white sm:block"
             onClick={() => scrollTop()}
           >
-            Islamic <span className="text-green-500">Pulse</span>
+            Islamic <span className="text-green-400">Pulse</span>
           </p>
         </Link>
         <div className="flex items-center justify-between gap-5">
@@ -59,7 +59,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {/* <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <NavLink
                 onClick={() => scrollTop()}
                 to={"/blog"}
@@ -69,9 +69,20 @@ const Navbar = () => {
               >
                 Blog
               </NavLink>
+            </li> */}
+            <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              <NavLink
+                onClick={() => scrollTop()}
+                to={"/dashboard"}
+                className={({ isActive }) =>
+                  isActive ? "text-green-500 underline underline-offset-2" : ""
+                }
+              >
+                Dashboard
+              </NavLink>
             </li>
           </ul>
-          <div className="flex gap-3 items-center">
+          <div className="flex items-center gap-3">
             {user?.displayName ? (
               <>
                 <div className="relative">
@@ -96,7 +107,7 @@ const Navbar = () => {
 
                 <span
                   onClick={() => logOut()}
-                  className="bg-rose-50 text-rose-500 hover:bg-rose-100 w-10 h-10 text-2xl rounded-full flex items-center justify-center cursor-pointer shadow-md"
+                  className="flex items-center justify-center w-10 h-10 text-2xl rounded-full shadow-md cursor-pointer bg-rose-50 text-rose-500 hover:bg-rose-100"
                 >
                   <FiLogOut />
                 </span>
@@ -105,7 +116,7 @@ const Navbar = () => {
               <Link
                 onClick={() => toggleLogin()}
                 to={"/login"}
-                className="bg-green-500 text-white font-semibold rounded-md px-3 py-1 text-lg"
+                className="px-3 py-1 text-lg font-semibold text-white bg-green-500 rounded-md"
               >
                 Login
               </Link>
@@ -113,7 +124,7 @@ const Navbar = () => {
               <Link
                 onClick={() => toggleLogin()}
                 to={"/registration"}
-                className="border border-green-500 hover:bg-green-500 hover:text-white duration-200 font-semibold rounded-md px-3 py-1 text-lg"
+                className="px-3 py-1 text-lg font-semibold duration-200 border border-green-500 rounded-md hover:bg-green-500 hover:text-white"
               >
                 Registration
               </Link>

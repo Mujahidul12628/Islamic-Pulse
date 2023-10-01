@@ -13,7 +13,7 @@ const PopularRecipes = () => {
   const { loading } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch("http://localhost:5555/recipes")
+    fetch("http://localhost:5050/recipes")
       .then((res) => res.json())
       .then((data) => setRecipes(data))
       .catch((error) => console.log(error));
