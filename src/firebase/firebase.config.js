@@ -5,15 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD-_F-aWvAGMXCOu9JGjU2Cdn34-36s_l4",
-  authDomain: "Islamic-Pulse.firebaseapp.com",
-  projectId: "Islamic-Pulse",
-  storageBucket: "Islamic-Pulse.appspot.com",
-  messagingSenderId: "681059469997",
-  appId: "1:681059469997:web:4aa88a18b195cfe8559424"
+  apiKey: "AIzaSyBsWI962cLRQqH_CnOK8j7j-gQR-opNqzw",
+  authDomain: "islamic-pulse-1a614.firebaseapp.com",
+  projectId: "islamic-pulse-1a614",
+  storageBucket: "islamic-pulse-1a614.appspot.com",
+  messagingSenderId: "431568502663",
+  appId: "1:431568502663:web:88d6d429730d4234409d22"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
 export default app
