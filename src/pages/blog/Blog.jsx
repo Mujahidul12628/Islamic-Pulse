@@ -9,16 +9,6 @@ const Blog = () => {
   return (
     <>
       <div className="bg-rose-100">
-        {/* <Pdf targetRef={ref} filename="questions.pdf" pageSize="A4">
-          {({ toPdf }) => (
-            <button
-              className="px-3 py-1 font-semibold text-white rounded-r-full shadow-md bg-rose-500"
-              onClick={toPdf}
-            >
-              Generate Pdf
-            </button>
-          )}
-        </Pdf> */}
       </div>
       <div className="mb-10" ref={ref}>
         <div className="py-5 text-center bg-primary">
