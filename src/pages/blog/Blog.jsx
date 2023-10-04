@@ -13,7 +13,7 @@ const Blog = () => {
       <div className="mb-10" ref={ref}>
         <div className="py-5 text-center bg-primary">
           <h2 className="text-xl font-semibold sm:text-2xl">
-            Find Your Question
+            Islamic Education Blog
           </h2>
         </div>
         <div className="grid gap-5 px-5 sm:px-10 sm:grid-cols-2 gap-y-8">
