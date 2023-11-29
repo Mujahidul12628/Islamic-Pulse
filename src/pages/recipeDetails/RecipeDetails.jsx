@@ -38,30 +38,6 @@ const RecipeDetails = () => {
             <h4 className="flex items-center justify-center my-5 text-3xl font-bold text-green-500 ">
               {course_name}
             </h4>
-            {/* <div>
-              <h5 className="text-2xl font-semibold">Course Syllabus</h5>
-              <ul className="ml-5 list-disc">
-                {ingredients &&
-                  ingredients.map((item, index) => (
-                    <li key={index} className="flex items-center">
-
-                      <LiaArrowCircleRightSolid className='mr-2 text-green-600' size={20} />
-                      {item}
-                    </li>
-                  ))}
-              </ul>
-            </div> */}
-
-            {/* <div>
-              <h5 className="mt-4 text-2xl font-semibold">Course Content</h5>
-              {course_content.map((content, index) => (
-                <div key={index} className="my-1">
-                  <h2 className="text-xl font-bold">{content.title}</h2>
-                  <p>{content.description}</p>
-                </div>
-              ))}
-            </div> */}
-
             <div>
               <table className="min-w-full p-1 border bg-slate-300 border-slate-400">
                 <thead>
